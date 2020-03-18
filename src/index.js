@@ -1,18 +1,15 @@
-// import react and react-dom
 import React from 'react'
 import ReactDOM from 'react-dom'
+import CommentDetails from './CommentDetails'
 
-// create component
 const App = () => {
-    return <div>
-        hello world
-    </div>
+    return (
+        <div className="ui container comments">
+            <CommentDetails />
+            <CommentDetails />
+            <CommentDetails />
+        </div>
+    )
 }
 
-
-
-// render in screen
-ReactDOM.render(
-    <App />,
-    document.querySelector('#root')
-)
+ReactDOM.render(<App />, document.querySelector('#root'))
