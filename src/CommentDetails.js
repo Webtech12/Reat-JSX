@@ -1,7 +1,7 @@
 import React from 'react'
 import { image } from "faker"
 
-const CommentDetails = () => {
+const CommentDetails = props => {
     return (
         <div className="comment" >
             <a href="/" className="avatar">
@@ -9,8 +9,8 @@ const CommentDetails = () => {
             </a>
             <div className="content">
                 <a href="/" className="author">
-                    Sam
-                    </a>
+                    {props.author}
+                </a>
                 <div className="metadata">
                     <span className="date">Today at 6:00PM</span>
                 </div>
